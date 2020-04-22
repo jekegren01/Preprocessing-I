@@ -1,3 +1,5 @@
+Installed Node, Less, and less-watch-compiler...ran compiler successfully.
+
 # Preprocessing I: Digital Resume
 
 For this project you will be building a digital resume from scratch. You will be required to use specific preprocessing skills to accomplish your tasks.  
