@@ -161,8 +161,13 @@ header .navbar {
   justify-content: space-evenly;
 }
 header .navbar h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-family: cursive;
+}
+@media (max-width: 800px) {
+  header .navbar h1 {
+    font-size: 2rem;
+  }
 }
 header .navbar a {
   font-size: 1.8rem;
@@ -172,14 +177,24 @@ header .navbar a {
   margin: 0.1% 0.7%;
   padding: 0.8% 1.5% 0.6%;
 }
-.main-content .obj {
+.main-content .objective p {
   padding-top: 3%;
   font-size: 2.4rem;
   text-decoration: underline;
 }
+@media (max-width: 800) {
+  .main-content .objective p {
+    font-size: 1rem;
+  }
+}
 .main-content p {
   font-size: 1.5rem;
   padding-left: 1.5%;
+}
+@media (max-width: 800px) {
+  .main-content p {
+    font-size: 1rem;
+  }
 }
 .main-content .education {
   margin: 0.1% 0.7%;
@@ -195,6 +210,11 @@ header .navbar a {
   text-decoration: underline;
   padding-bottom: 1%;
 }
+@media (max-width: 800px) {
+  .main-content .education .ed h2 {
+    font-size: 2rem;
+  }
+}
 .main-content .qual {
   margin: 0.1% 0.7%;
   padding: 0.8% 1.5% 0.6%;
@@ -203,6 +223,11 @@ header .navbar a {
   text-decoration: underline;
   font-size: 2.4rem;
   padding-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .main-content .qual h2 {
+    font-size: 2rem;
+  }
 }
 .main-content .skills {
   margin: 0.1% 0.7%;
@@ -213,15 +238,30 @@ header .navbar a {
   text-decoration: underline;
   padding-bottom: 0.5%;
 }
+@media (max-width: 800px) {
+  .main-content .skills h2 {
+    font-size: 2rem;
+  }
+}
 .main-content .skills h3 {
   font-size: 1.8rem;
   padding-left: 0.5%;
   padding-top: 0.5%;
   font-style: italic;
 }
+@media (max-width: 800px) {
+  .main-content .skills h3 {
+    font-size: 1.5rem;
+  }
+}
 .main-content .skills p {
   font-size: 1.5rem;
   text-align: left;
+}
+@media (max-width: 800px) {
+  .main-content .skills p {
+    font-size: 1rem;
+  }
 }
 .main-content .workexp {
   margin: 0.1% 0.7%;
