@@ -1,1 +1,341 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+.stdmargin {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row nowrap;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar {
+  background-color: #778899b0;
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 1.8%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .navbar h1 {
+  font-size: 4rem;
+  font-family: cursive;
+}
+@media (max-width: 800px) {
+  header .navbar h1 {
+    font-size: 2rem;
+  }
+}
+header .navbar a {
+  font-size: 1.8rem;
+}
+.main-content {
+  background-color: #58779633;
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .objective {
+  padding-top: 1.3rem;
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .main-content .objective {
+    font-size: 1.5rem;
+  }
+}
+.main-content p {
+  font-size: 1.5rem;
+  padding-left: 1.5%;
+  font-family: 'Comic Neue', cursive;
+}
+@media (max-width: 800px) {
+  .main-content p {
+    font-size: 1.1rem;
+  }
+}
+.main-content .education {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .education .ed {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .education .ed h2 {
+  font-size: 2.4rem;
+  padding-top: 1%;
+  text-decoration: underline;
+  padding-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .main-content .education .ed h2 {
+    font-size: 2rem;
+  }
+}
+.main-content .qual {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .qual h2 {
+  text-decoration: underline;
+  font-size: 2.4rem;
+  padding-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .main-content .qual h2 {
+    font-size: 1.7rem;
+  }
+}
+.main-content .skills {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .skills h2 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+  padding-bottom: 0.5%;
+}
+@media (max-width: 800px) {
+  .main-content .skills h2 {
+    font-size: 1.7rem;
+  }
+}
+.main-content .skills h3 {
+  font-size: 1.8rem;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  font-style: italic;
+}
+@media (max-width: 800px) {
+  .main-content .skills h3 {
+    font-size: 1.5rem;
+  }
+}
+.main-content .skills p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .main-content .skills p {
+    font-size: 1.1rem;
+  }
+}
+.main-content .workexp {
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+}
+.main-content .workexp h2 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .main-content .workexp h2 {
+    font-size: 2rem;
+  }
+}
+.main-content .workexp .workhistory {
+  display: flex;
+  flex-direction: row nowrap;
+}
+@media (max-width: 800px) {
+  .main-content .workexp .workhistory p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .workhistory p {
+    font-size: 0.8rem;
+  }
+}
+.main-content .workexp .years {
+  width: 12%;
+}
+@media (max-width: 800px) {
+  .main-content .workexp .years {
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .years {
+    width: 12%;
+  }
+}
+.main-content .workexp .location,
+.main-content .workexp .jobtitle {
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .main-content .workexp .location,
+  .main-content .workexp .jobtitle {
+    width: 42%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .location,
+  .main-content .workexp .jobtitle {
+    width: 44%;
+  }
+}
+footer {
+  background-color: #778899b0;
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  footer {
+    font-size: 1.1rem;
+  }
+}

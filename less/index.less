@@ -53,7 +53,200 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+	font-size: 62.5%;
 }
 
+html, body {
+	height: 100%;
+}
+
+@topbtmcolor: #778899b0;
+@mainbckcolor: #58779633;
+@sectiontitles: 2.4rem;
+@subtitles: 1.8rem;
+@psize: 1.5rem;
+
+.stdmargin {
+	margin: 0.1% 0.7%;
+	padding: 0.8% 1.5% 0.6%;
+}
+
+.flexrow {
+	display: flex;
+	flex-direction: row nowrap;
+}
+
+.flexcol {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	.navbar {
+		background-color: @topbtmcolor;
+		.stdmargin();
+		height: auto;
+		padding-top: 3rem;
+		padding-bottom: 1.8%;
+
+		@media (max-width: 500px) {
+			.flexcol();
+			align-items: center;
+		}
+
+		h1 {
+			font-size: 4rem;
+			font-family: cursive;
+			@media (max-width: 800px) {
+				font-size: 2.0rem;
+			}
+		}
+
+		.flexrow();
+		justify-content: space-evenly;
+
+		a {
+			font-size: @subtitles;
+		}
+	}
+}
+
+.main-content {  // Beginning of main-content
+	background-color: @mainbckcolor;
+	.stdmargin();
+
+	.objective {
+		padding-top: 1.3rem;
+		font-size: @sectiontitles;
+		text-decoration: underline;
+		@media (max-width: 800px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	p {
+		font-size: @psize;
+		padding-left: 1.5%;
+		font-family: 'Comic Neue', cursive;
+		@media (max-width: 800px) {
+			font-size: 1.1rem;
+		}
+	}
+
+	.education { // Beginning of education
+		.stdmargin();
+
+			.ed {
+
+				h2 {
+					font-size: @sectiontitles;
+					padding-top: 1%;
+					text-decoration: underline;
+					padding-bottom: 1%;
+					@media (max-width: 800px) {
+						font-size: 2.0rem;
+					}
+					}
+
+				.stdmargin();
+
+				}
+			}  // End of education
+
+	.qual {
+
+		h2 {
+			text-decoration: underline;
+			font-size: @sectiontitles;
+			padding-bottom: 1%;
+			@media (max-width: 800px) {
+				font-size: 1.7rem;
+			}
+			}
+
+		.stdmargin();
+		}
+	
+	.skills {
+		.stdmargin();
+
+		h2 {
+			font-size: @sectiontitles;
+			text-decoration: underline;
+			padding-bottom: 0.5%;
+			@media (max-width: 800px) {
+				font-size: 1.7rem;
+			}
+		}
+
+		h3 {
+			font-size: @subtitles;
+			padding-left: 0.5%;
+			padding-top: 0.5%;
+			font-style: italic;
+			@media (max-width: 800px) {
+				font-size: 1.5rem;
+			}
+		}
+
+		p {
+			font-size: @psize;
+			text-align: left;
+			@media (max-width: 800px) {
+				font-size: 1.1rem;
+			}
+		}
+	} // End of skills
+
+	.workexp {
+		.stdmargin();
+
+		h2 {
+			font-size: @sectiontitles;
+			text-decoration: underline;
+			@media (max-width: 800px) {
+				font-size: 2.0rem;
+			}
+		}
+		
+		.workhistory {
+			.flexrow();
+			@media (max-width: 800px) {
+				p {font-size: 1.1rem;}
+			}
+			@media (max-width: 500px) {
+				p {font-size: 0.8rem;}
+			}
+		}
+		
+		.years {
+			width: 12%;
+			@media (max-width: 800px) {
+				width: 15%;
+			}
+			@media (max-width: 500px) {
+				width: 12%;
+			}
+		}
+		.location, .jobtitle {
+			width: 40%;
+			@media (max-width: 800px) {
+				width: 42%;
+			}
+			@media (max-width: 500px) {
+				width: 44%;
+			}
+		}
+	} // End of work experience	
+} // End of main content 
+
+footer {
+	background-color: @topbtmcolor;
+	.stdmargin();
+	font-size: 1.5rem;
+	text-align: center;
+	@media (max-width: 800px) {
+		font-size: 1.1rem;
+	}
+}
