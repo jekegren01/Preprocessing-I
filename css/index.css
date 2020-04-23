@@ -177,14 +177,14 @@ header .navbar a {
   margin: 0.1% 0.7%;
   padding: 0.8% 1.5% 0.6%;
 }
-.main-content .objective p {
-  padding-top: 3%;
+.main-content .objective {
+  padding-top: 1.3rem;
   font-size: 2.4rem;
   text-decoration: underline;
 }
-@media (max-width: 800) {
-  .main-content .objective p {
-    font-size: 1rem;
+@media (max-width: 800px) {
+  .main-content .objective {
+    font-size: 1.5rem;
   }
 }
 .main-content p {
@@ -193,7 +193,7 @@ header .navbar a {
 }
 @media (max-width: 800px) {
   .main-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .main-content .education {
@@ -226,7 +226,7 @@ header .navbar a {
 }
 @media (max-width: 800px) {
   .main-content .qual h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .main-content .skills {
@@ -240,7 +240,7 @@ header .navbar a {
 }
 @media (max-width: 800px) {
   .main-content .skills h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .main-content .skills h3 {
@@ -260,7 +260,7 @@ header .navbar a {
 }
 @media (max-width: 800px) {
   .main-content .skills p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .main-content .workexp {
@@ -271,16 +271,53 @@ header .navbar a {
   font-size: 2.4rem;
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .main-content .workexp h2 {
+    font-size: 2rem;
+  }
+}
 .main-content .workexp .workhistory {
   display: flex;
   flex-direction: row nowrap;
 }
+@media (max-width: 800px) {
+  .main-content .workexp .workhistory p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .workhistory p {
+    font-size: 0.8rem;
+  }
+}
 .main-content .workexp .years {
-  width: 10%;
+  width: 12%;
+}
+@media (max-width: 800px) {
+  .main-content .workexp .years {
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .years {
+    width: 13%;
+  }
 }
 .main-content .workexp .location,
 .main-content .workexp .jobtitle {
   width: 40%;
+}
+@media (max-width: 800px) {
+  .main-content .workexp .location,
+  .main-content .workexp .jobtitle {
+    width: 42%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .workexp .location,
+  .main-content .workexp .jobtitle {
+    width: 43%;
+  }
 }
 footer {
   background-color: #778899b0;
@@ -288,4 +325,9 @@ footer {
   padding: 0.8% 1.5% 0.6%;
   font-size: 1.5rem;
   text-align: center;
+}
+@media (max-width: 800px) {
+  footer {
+    font-size: 1.1rem;
+  }
 }

@@ -107,23 +107,24 @@ header {
 	}
 }
 
-.main-content {
+.main-content {  // Beginning of main-content
 	background-color: @mainbckcolor;
 	.stdmargin();
 
-	.objective p {
-		padding-top: 3%;
+	.objective {
+		padding-top: 1.3rem;
 		font-size: @sectiontitles;
 		text-decoration: underline;
-		@media (max-width: 800) {
-			font-size: 1.0rem;
+		@media (max-width: 800px) {
+			font-size: 1.5rem;
 		}
 	}
+
 	p {
 		font-size: @psize;
 		padding-left: 1.5%;
 		@media (max-width: 800px) {
-			font-size: 1.0rem;
+			font-size: 1.1rem;
 		}
 	}
 
@@ -154,7 +155,7 @@ header {
 			font-size: @sectiontitles;
 			padding-bottom: 1%;
 			@media (max-width: 800px) {
-				font-size: 2.0rem;
+				font-size: 1.7rem;
 			}
 			}
 
@@ -169,7 +170,7 @@ header {
 			text-decoration: underline;
 			padding-bottom: 0.5%;
 			@media (max-width: 800px) {
-				font-size: 2.0rem;
+				font-size: 1.7rem;
 			}
 		}
 
@@ -187,7 +188,7 @@ header {
 			font-size: @psize;
 			text-align: left;
 			@media (max-width: 800px) {
-				font-size: 1.0rem;
+				font-size: 1.1rem;
 			}
 		}
 	} // End of skills
@@ -198,18 +199,39 @@ header {
 		h2 {
 			font-size: @sectiontitles;
 			text-decoration: underline;
+			@media (max-width: 800px) {
+				font-size: 2.0rem;
+			}
 		}
 		
 		.workhistory {
 			.flexrow();
+			@media (max-width: 800px) {
+				p {font-size: 1.1rem;}
 			}
+			@media (max-width: 500px) {
+				p {font-size: 0.8rem;}
+			}
+		}
 		
 		.years {
-			width: 10%;
+			width: 12%;
+			@media (max-width: 800px) {
+				width: 15%;
 			}
+			@media (max-width: 500px) {
+				width: 13%;
+			}
+		}
 		.location, .jobtitle {
 			width: 40%;
+			@media (max-width: 800px) {
+				width: 42%;
 			}
+			@media (max-width: 500px) {
+				width: 43%;
+			}
+		}
 	} // End of work experience	
 } // End of main content 
 
@@ -218,4 +240,7 @@ footer {
 	.stdmargin();
 	font-size: 1.5rem;
 	text-align: center;
+	@media (max-width: 800px) {
+		font-size: 1.1rem;
+	}
 }
