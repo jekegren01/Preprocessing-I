@@ -137,3 +137,100 @@ html,
 body {
   height: 100%;
 }
+.stdmargin {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row nowrap;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar {
+  background-color: #778899b0;
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 1.8%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-evenly;
+}
+header .navbar h1 {
+  font-size: 3.6rem;
+  font-family: cursive;
+}
+header .navbar a {
+  font-size: 1.8rem;
+}
+.main-content {
+  background-color: #58779633;
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .obj {
+  padding-top: 3%;
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+.main-content p {
+  font-size: 1.5rem;
+  padding-left: 1.5%;
+}
+.main-content .education {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .education .ed {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .education .ed h2 {
+  font-size: 2.4rem;
+  padding-top: 1%;
+  text-decoration: underline;
+  padding-bottom: 1%;
+}
+.main-content .qual {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .qual h2 {
+  text-decoration: underline;
+  font-size: 2.4rem;
+  padding-bottom: 1%;
+}
+.main-content .skills {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .skills h2 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+  padding-bottom: 0.5%;
+}
+.main-content .skills h3 {
+  font-size: 1.8rem;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  font-style: italic;
+}
+.main-content .skills p {
+  font-size: 1.5rem;
+}
+.main-content .workexp {
+  margin: 0.1% 0.7%;
+  padding: 1.2% 1.5% 0.6%;
+}
+.main-content .workexp h2 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+.main-content .workexp .workhistory {
+  display: flex;
+  flex-direction: row nowrap;
+}
