@@ -160,6 +160,13 @@ header .navbar {
   flex-direction: row nowrap;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header .navbar h1 {
   font-size: 4rem;
   font-family: cursive;
@@ -190,6 +197,7 @@ header .navbar a {
 .main-content p {
   font-size: 1.5rem;
   padding-left: 1.5%;
+  font-family: 'Comic Neue', cursive;
 }
 @media (max-width: 800px) {
   .main-content p {
@@ -300,7 +308,7 @@ header .navbar a {
 }
 @media (max-width: 500px) {
   .main-content .workexp .years {
-    width: 13%;
+    width: 12%;
   }
 }
 .main-content .workexp .location,
@@ -316,7 +324,7 @@ header .navbar a {
 @media (max-width: 500px) {
   .main-content .workexp .location,
   .main-content .workexp .jobtitle {
-    width: 43%;
+    width: 44%;
   }
 }
 footer {

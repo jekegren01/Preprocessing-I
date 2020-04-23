@@ -90,6 +90,11 @@ header {
 		padding-top: 3rem;
 		padding-bottom: 1.8%;
 
+		@media (max-width: 500px) {
+			.flexcol();
+			align-items: center;
+		}
+
 		h1 {
 			font-size: 4rem;
 			font-family: cursive;
@@ -123,6 +128,7 @@ header {
 	p {
 		font-size: @psize;
 		padding-left: 1.5%;
+		font-family: 'Comic Neue', cursive;
 		@media (max-width: 800px) {
 			font-size: 1.1rem;
 		}
@@ -220,7 +226,7 @@ header {
 				width: 15%;
 			}
 			@media (max-width: 500px) {
-				width: 13%;
+				width: 12%;
 			}
 		}
 		.location, .jobtitle {
@@ -229,7 +235,7 @@ header {
 				width: 42%;
 			}
 			@media (max-width: 500px) {
-				width: 43%;
+				width: 44%;
 			}
 		}
 	} // End of work experience	
