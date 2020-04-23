@@ -139,7 +139,7 @@ body {
 }
 .stdmargin {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .flexrow {
   display: flex;
@@ -152,9 +152,9 @@ body {
 header .navbar {
   background-color: #778899b0;
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
   height: auto;
-  padding-top: 2%;
+  padding-top: 3rem;
   padding-bottom: 1.8%;
   display: flex;
   flex-direction: row nowrap;
@@ -170,7 +170,7 @@ header .navbar a {
 .main-content {
   background-color: #58779633;
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .obj {
   padding-top: 3%;
@@ -183,11 +183,11 @@ header .navbar a {
 }
 .main-content .education {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .education .ed {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .education .ed h2 {
   font-size: 2.4rem;
@@ -197,7 +197,7 @@ header .navbar a {
 }
 .main-content .qual {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .qual h2 {
   text-decoration: underline;
@@ -206,7 +206,7 @@ header .navbar a {
 }
 .main-content .skills {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .skills h2 {
   font-size: 2.4rem;
@@ -221,10 +221,11 @@ header .navbar a {
 }
 .main-content .skills p {
   font-size: 1.5rem;
+  text-align: left;
 }
 .main-content .workexp {
   margin: 0.1% 0.7%;
-  padding: 1.2% 1.5% 0.6%;
+  padding: 0.8% 1.5% 0.6%;
 }
 .main-content .workexp h2 {
   font-size: 2.4rem;
@@ -233,4 +234,18 @@ header .navbar a {
 .main-content .workexp .workhistory {
   display: flex;
   flex-direction: row nowrap;
+}
+.main-content .workexp .years {
+  width: 10%;
+}
+.main-content .workexp .location,
+.main-content .workexp .jobtitle {
+  width: 40%;
+}
+footer {
+  background-color: #778899b0;
+  margin: 0.1% 0.7%;
+  padding: 0.8% 1.5% 0.6%;
+  font-size: 1.5rem;
+  text-align: center;
 }
